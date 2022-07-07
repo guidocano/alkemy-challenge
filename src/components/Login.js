@@ -69,7 +69,7 @@ function Login () {
                 </label>
                 
                 <br/>
-                <button type="submit">Ingresar</button>
+                <button className="btn btn-success mt-2" type="submit">Ingresar</button>
             </form>
         </>
     )
