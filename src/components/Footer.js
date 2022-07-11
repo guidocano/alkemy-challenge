@@ -10,7 +10,7 @@ function Footer () {
                             </li>
                         </ul>
                     </div>
-                    <p>Copyright Alkemy Challenge</p>
+                    <p>Alkemy Challenge</p>
                 </div>
 
             </nav>

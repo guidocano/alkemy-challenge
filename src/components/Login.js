@@ -51,7 +51,7 @@ function Login () {
     }
 
     let token = sessionStorage.getItem("token");
-
+    
     return (
         <>
             {token && <Navigate to="/listado" />}

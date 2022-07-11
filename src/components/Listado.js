@@ -3,7 +3,7 @@ import  { useEffect, useState} from "react";
 import axios from "axios";
 import swAlert from '@sweetalert/with-react';
 
-function Listado () {
+function Listado (props) {
 
     let token = sessionStorage.getItem("token");
 
@@ -43,6 +43,13 @@ function Listado () {
                     <div className="col-3" key={oneMovie.id}>
                         <div className="card">
                             <img src={`https://image.tmdb.org/t/p/w500/${oneMovie.poster_path}`} className="card-img-top" alt="movie poster" />
+                            <button 
+                                onClick={props.addRemoveFavs} 
+                                className="favourite-btn"
+                                data-movie-id={oneMovie.id}>
+                                🤍
+                            </button>
+                            
                             <div className="card-body">
                                 <h5 className="card-title">{oneMovie.title.substring(0, 30)}</h5>
                                 <p className="card-text">{oneMovie.overview.substring(0, 100)}...</p>
